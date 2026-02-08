@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Contattami</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylee.css">
+</head>
+<body>
+
+<header>
+    <a href="https://www.itisgalilei.edu.it/" target="_blank">
+        <img src="logo.png" id="logo_scuola" alt="Logo scuola">
+    </a>
+    <h1>Curriculum Vitae</h1>
+</header>
+
+<nav class="menu-orizzontale">
+    <ul>
+        <li><a href="index.html" class="active">🏫 Home</a></li>
+        <li><a href="contatti.html">✉️ Contatti</a></li>
+        <li><a href="#">➕ Altro</a></li>
+    </ul>
+</nav>
+
+<main class="form-container">
+    <form id="contact-form">
+        <label>Nome</label>
+        <input type="text" name="nome" required>
+
+        <label>Cognome</label>
+        <input type="text" name="cognome" required>
+
+        <label>Email</label>
+        <input type="email" name="email" required>
+
+        <label>Messaggio</label>
+        <textarea name="messaggio" rows="5" required></textarea>
+
+        <button type="submit">Invia</button>
+    </form>
+
+    <p id="form-status"></p>
+
+    <!-- <p id="form-status" style="margin-top:15px;color:green;"></p> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script src="mail.js"></script>
+</main>
+
+<footer>
+    <p>Autorizzo il trattamento dei dati personali</p>
+</footer>
+
+</body>
+</html>

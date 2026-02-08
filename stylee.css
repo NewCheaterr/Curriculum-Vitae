@@ -1,0 +1,292 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-weight: 700;
+    font-size: 2.5em;
+    margin-top: 20px;
+    letter-spacing: -0.5px;
+}
+
+header img {
+    height: 80px;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+.menu-orizzontale {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.menu-orizzontale ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+    padding: 15px;
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+.menu-orizzontale li {
+    margin: 0 5px;
+}
+
+.menu-orizzontale a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-weight: 600;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.menu-orizzontale a:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+    transform: translateY(-2px);
+}
+/*
+.container {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
+    flex: 1;
+}
+*/
+aside {
+    width: 25%;
+    background-color: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+aside h3 {
+    color: #667eea;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+
+aside ul {
+    list-style: none;
+    padding: 0;
+}
+
+aside ul li {
+    margin: 10px 0;
+}
+
+aside a {
+    color: #667eea;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+aside a:hover {
+    color: #764ba2;
+    padding-left: 5px;
+}
+/*
+main {
+    width: 75%;
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+*/
+section {
+    margin-bottom: 30px;
+    display: none;
+}
+
+section h2 {
+    color: #667eea;
+    margin-bottom: 15px;
+    font-size: 1.8em;
+    border-bottom: 2px solid #667eea;
+    padding-bottom: 10px;
+}
+
+footer {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container {
+    padding: 0;
+    position: center;
+
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: 600;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    transition: all 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+button {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    padding: 12px 40px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
+.twitter-box {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 2px solid #e0e0e0;
+}
+
+.twitter-box h4 {
+    color: #667eea;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 8px 0;
+    color: #555;
+}
+
+ul li strong {
+    color: #333;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+    }
+
+    aside, main {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    .menu-orizzontale ul {
+        gap: 10px;
+    }
+
+    .menu-orizzontale a {
+        padding: 8px 15px;
+        font-size: 0.9em;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    aside {
+        padding: 20px;
+    }
+}
+
+.logo_scuola {
+    position: relative;
+    display: inline-block;
+    margin: 0;
+}
+/*
+main {
+    display: flex;
+    justify-content: center;   
+    padding: 40px 20px;        
+}
+*/
+/* Contenitore del form (o il form stesso) */
+.form-container, 
+main form {
+    width: 100%;
+    max-width: 700px;          /* larghezza massima */
+    margin: 0 auto;            /* centrato */
+}
+
+/* Centra il contenuto quando c'è solo il main */
+.container {
+    justify-content: center;
+}
+
+/* Sistema il main (soprattutto nella pagina contatti) */
+main {
+    width: 100%;
+    max-width: 800px;      /* larghezza massima del form */
+    margin-top: 40px;      /* stacco dal menu */
+    padding: 60px 20px;
+}
+
+
+form-status {
+    margin-top:15px;
+    color:green;
+}
