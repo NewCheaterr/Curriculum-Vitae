@@ -257,17 +257,11 @@ ul li strong {
     display: inline-block;
     margin: 0;
 }
-/*
-main {
-    display: flex;
-    justify-content: center;   
-    padding: 40px 20px;        
-}
 
-/* Contenitore del form (o il form stesso) */
 .form-container, 
 main form {
     width: 100%;
-    max-width: 700px;          /* larghezza massima */
-    margin: 0 auto;            /* centrato */
+    max-width: 700px;         
+    margin: 0 auto;         
+
 }
