@@ -32,6 +32,32 @@ header img {
     filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
 }
 
+.toast {
+  position:fixed;
+  bottom:100px;
+  left:50%;
+  transform:translateX(-50%) translateY(20px);
+  background: rgba(0, 0, 0, 0.85);
+  color:#fff;
+  padding:10px 18px;
+  border-radius:8px;
+  opacity:0;
+  transition:all .3s ease;
+  font-size:14px;
+  font-weight:600;
+  z-index:11000;
+}
+.toast.show {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+@keyframes rotatePop {
+  0% { transform: rotate(0deg) scale(1); }
+  50% { transform: rotate(180deg) scale(1.2); }
+  100% { transform: rotate(360deg) scale(1); }
+}
+
 .menu-orizzontale {
     position: sticky;
     top: 0;
@@ -257,27 +283,36 @@ ul li strong {
     display: inline-block;
     margin: 0;
 }
-
+/*
+main {
+    display: flex;
+    justify-content: center;   
+    padding: 40px 20px;        
+}
+*/
+/* Contenitore del form (o il form stesso) */
 .form-container, 
 main form {
     width: 100%;
-    max-width: 700px;        
-    margin: 0 auto;         
+    max-width: 700px;          /* larghezza massima */
+    margin: 0 auto;            /* centrato */
 }
 
+/* Centra il contenuto quando c'è solo il main */
 .container {
     justify-content: center;
 }
 
+/* Sistema il main (soprattutto nella pagina contatti) */
 main {
     width: 100%;
-    max-width: 800px;     
-    margin-top: 40px;     
+    max-width: 800px;      /* larghezza massima del form */
+    margin-top: 40px;      /* stacco dal menu */
     padding: 60px 20px;
 }
+
 
 form-status {
     margin-top:15px;
     color:green;
-
 }

@@ -1,6 +1,6 @@
 // Inizializza EmailJS
 (function () {
-    emailjs.init("HllyEBjZHfgoFEg0W"); // tua PUBLIC KEY
+    emailjs.init("HllyEBjZHfgoFEg0W");
 })();
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -11,8 +11,8 @@ document.addEventListener("DOMContentLoaded", function () {
         event.preventDefault();
 
         emailjs.sendForm(
-            "service_zi99f5h",   // tuo SERVICE ID
-            "template_ra2vc5e",  // tuo TEMPLATE ID
+            "service_zi99f5h", 
+            "template_ra2vc5e",
             form
         ).then(function () {
             status.style.color = "green";
